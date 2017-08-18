@@ -136,7 +136,7 @@ STATICFILES_DIRS = (
 
 # # Disquas comments Settings
 DISQUS_API_KEY = config("DISQUS_API_KEY")
-DISQUS_WEBSITE_SHORTNAME = 'happy-birthday'
+DISQUS_WEBSITE_SHORTNAME = 'happy-birthday-vitalik'
 
 
 # # reCapch key settings
