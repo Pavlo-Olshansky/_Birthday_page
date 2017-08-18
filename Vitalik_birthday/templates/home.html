@@ -1,0 +1,238 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+  {% block background_image %}
+  <div id="fh5co-hero" style="background-image: url({% static 'images/BG/bg.jpg' %})">
+  {% endblock background_image %}
+
+    {% block header_on_background %}
+    <a href="#fh5co-main" class="smoothscroll animated bounce fh5co-arrow"><i class="ti-angle-down"></i></a>
+    <div class="overlay"></div>
+    <div class="container">
+      {% block main_title %}
+      <div class="col-md-8 col-md-offset-2">
+        <div class="text">
+          <h1><strong> Віталік!</strong> <p>Вітаю з днем народження!</p></h1>
+        </div>
+      </div>
+      {% endblock main_title %}
+    </div>
+  </div>
+  {% endblock header_on_background %}
+
+  {% block main_content %}
+
+  <main role="main" id="fh5co-main">
+    <section class="feature">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="icon ti-gift"></i></div>
+              <div class="feature-text">
+                <h3>Щастя</h3>
+                <p>Нехай волошками цвітуть літа прекрасні, 
+                    Нехай здійсняться тисячі бажань, 
+                    Щоб доля дарувала тільки щастя, 
+                    Ні грама бід, ні крапельки страждань. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="icon ti-star"></i></div>
+              <div class="feature-text">
+                <h3>Здоров'я</h3>
+                <p>З нагоди урочистої події – 
+                  Троянди, усмішки, цілунки, привітання ! 
+                  Хай втілюються у житті найсміливіші мрії 
+                  І щирих друзів гарні побажання!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="icon ti-heart"></i></div>
+              <div class="feature-text">
+                <h3>Кохання</h3>
+                <p>Життя хай квітне, мов вишневий сад, 
+                  І кожен день усміхнено радіє, 
+                  А доля подарує зорепад 
+                  Здоров'я, миру, успіхів надії 
+                  Усмішок глибоких, як дно океану, 
+                  Й міцного кохання — без меж і обману.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END .feature -->
+
+    <section class="grid-gallery">
+      <div class="container">
+        
+
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <h2 class="section-heading">Photos</h2>
+          </div>
+        </div>
+
+        <div class="row gallery-row">
+          
+          <div class="col-md-6 col-sm-6">
+            <a href="{% static 'images/1.jpg' %}" class="img image-popup">
+              <div class="overlay"></div>
+              <div class="text">
+                <h2>-это качели над рекой? Ты пристегнулась? -да, мам..</h2>
+              </div>
+              <img src="{% static 'images/1.jpg' %}" width='700px' height='500px' alt="Image" class="img-responsive">
+            </a>
+          </div>
+
+          <div class="col-md-6 col-sm-6">
+            <div class="row first-row">
+              <div class="col-md-6 col-sm-6">
+                <a href="{% static 'images/10.jpg' %}" class="img image-popup">
+                  <div class="overlay"></div>
+                  <div class="text">
+                    <h2>Когда договорились попить кофе и планы немножко изменились</h2>
+                  </div>
+                  <img src="{% static 'images/10.jpg' %}" width='700px' height='500px' alt="Image" class="img-responsive">
+                </a>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <a href="{% static 'images/3.jpg' %}" class="img image-popup">
+                  <div class="overlay"></div>
+                  <div class="text">
+                    <h2>хотела рассказать вам что-то интересное из своей жизни, но ДЕСПАСИТО...</h2>
+                  </div>
+                  <img src="{% static 'images/3.jpg' %}" width='700px' height='500px' alt="Image" class="img-responsive">
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <a href="{% static 'images/4.jpg' %}" class="img image-popup">
+                  <div class="overlay"></div>
+                  <div class="text">
+                    <h2>А че ты такая красивая?</h2>
+                  </div>
+                  <img src="{% static 'images/4.jpg' %}" width='700px' height='500px' alt="Image" class="img-responsive">
+                </a>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <a href="{% static 'images/7.jpg' %}" class="img image-popup">
+                  <div class="overlay"></div>
+                  <div class="text">
+                    <h2>Вітаю!</h2>
+                  </div>
+                  <img src="{% static 'images/7.jpg' %}" width='700px' height='500px' alt="Image" class="img-responsive">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<!-- Gallery Row -->
+
+        <div class="row gallery-row">
+          <div class="col-md-6 col-sm-6">
+            <div class="row first-row">
+              <div class="col-md-6 col-sm-6">
+                <a href="{% static 'images/6.jpg' %}" class="img image-popup">
+                  <div class="overlay"></div>
+                  <div class="text">
+                    <h2>20 років :)</h2>
+                  </div>
+                  <img src="{% static 'images/6.jpg' %}" width='700px' height='500px' alt="Image" class="img-responsive">
+                </a>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <a href="{% static 'images/9.jpg' %}" class="img image-popup">
+                  <div class="overlay"></div>
+                  <div class="text">
+                    <h2>Вітаю!</h2>
+                  </div>
+                  <img src="{% static 'images/9.jpg' %}" width='700px' height='500px' alt="Image" class="img-responsive">
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <a href="{% static 'images/8.jpg' %}" class="img image-popup">
+                  <div class="overlay"></div>
+                  <div class="text">
+                    <h2>З днем народження!</h2>
+                  </div>
+                  <img src="{% static 'images/8.jpg' %}" width='700px' height='500px' alt="Image" class="img-responsive">
+                </a>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <a href="{% static 'images/5.jpg' %}" class="img image-popup">
+                  <div class="overlay"></div>
+                  <div class="text">
+                    <h2>20 років :)</h2>
+                  </div>
+                  <img src="{% static 'images/5.jpg' %}" width='700px' height='500px' alt="Image" class="img-responsive">
+                </a>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-6 col-sm-6">
+            <a href="{% static 'images/2.jpg' %}" class="img image-popup">
+              <div class="overlay"></div>
+              <div class="text">
+                <h2>Вітаю!</h2>
+              </div>
+              <img src="{% static 'images/2.jpg' %}" width=700px height=500 alt="Image" class="img-responsive">
+            </a>
+          </div>
+        </div>
+
+        <!-- Gallery Row -->
+<!-- 
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div><a href="https://www.instagram.com/sveta_germanovich/" class="btn btn-primary">Go to Instagmam</a></div>
+          </div>
+        </div>
+         -->
+       
+        
+      </div>
+    </section>
+
+    {% block left_description %}{% endblock left_description %}
+      
+          
+    <section class="feature">
+      <div class="container">
+        <div class="row">
+
+        <script type="text/javascript">
+          var disqus_config = function () { 
+          this.language = "ua";
+          };
+        </script>
+
+        {% load disqus_tags %}
+        {% disqus_dev %}
+
+        <script type="text/javascript">
+          var disqus_developer = 1;
+          var disqus_url = 'http://happy-birthday-vitalik.disqus.com/';
+        </script>
+
+        {% load disqus_tags %}
+        {% disqus_show_comments 'HI' %}
+
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  {% endblock main_content %}
